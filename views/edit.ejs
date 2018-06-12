@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Dash Board</title>
+</head>
+<body>
+    <h1>Mongoose Dash Board</h1>
+    <h2>Edit Mongoose</h2>
+    <form action="/mongoose/<%=mongo.id%>" method="post">
+        Name: <input type="text" name="name" ><br><br>
+        Age: <input type="text" name="age" ><br><br>
+        Id: <input type="text" name="id" ><br><br>
+            <button type="submit">Edit</button>
+        </form>
+        <br>
+        <a href="/distroy/<%=mongo.id%>">Delete</a>
+
+        <a href="/details/<%=mongo.id%>">Details</a>
+        <a href="/"><button>Back</button></a>
+</body>
+</html>
